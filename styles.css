@@ -1,23 +1,195 @@
-:root {
-  --white: #fff;
-  --dark-blue: #1f1f26
+@font-face {
+  font-family: "MontserratBold";
+  src: url(fonts/Montserrat-Bold.ttf);
 }
 
-.content {
+@font-face {
+  font-family: "MontserratMedium";
+  src: url(fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "MontserratExtraLight";
+  src: url(fonts/Montserrat-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "MontserratSemiBold";
+  src: url(fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "LatoBold";
+  src: url(fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: "LatoSemibold";
+  src: url(fonts/Lato-Semibold.ttf);
+}
+
+:root {
+  --white: #fff;
+  --dark-blue: #1f1f26;
+  --dark-grey: #2d2d2d;
+  --black: #000;
+  --grey: #ccc
+}
+
+body {
+  color: var( --dark-grey);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.container {
   display: flex;
   flex-direction: row-reverse;
 }
 
 #main {
-  padding: 302px 0 0;
+  padding: 130px 0 0;
   background-color: var(--white);
+  width: 70%;
+}
+
+#main .content h2 {
+  font: 50px/50px "MontserratSemiBold";
+  border-bottom: 5px solid;
+  padding: 0 0 54px;
+  margin: 0 0 50px;
 }
 
 .heading {
   background-color: #fdcb00;
-  padding: 166px 155px;
+  padding: 120px 100px;
+}
+
+.heading h1,
+.heading mark {
+  line-height: 100px;
+  font-size: 100px;
+  font-family: "MontserratBold";
+  color: var(--black);
+}
+
+.heading mark {
+  font-family: "MontserratExtraLight";
+  background: none;
+  color: var( --dark-grey);
+}
+
+.heading span {
+  font-size: 50px;
+  line-height: 50px;
+  font-family: "MontserratMedium";
+}
+
+.content {
+  padding: 130px 155px;
+}
+
+.about-me {
+  font: 38px/58px "MontserratMedium";
+  padding: 0 0 140px;
+}
+
+.work-experience {
+  padding: 0 0 180px;
+}
+
+.work-experience li {
+  display: flex;
+  column-gap: 80px;
+  margin: 0 0 100px;
+}
+
+.work-experience .date {
+  width: 100%;
+  font: 38px/58px "MontserratBold";
+}
+
+.work-experience h3,
+.company-name {
+  font: 38px/58px "LatoBold";
+}
+
+.company-name {
+  margin: 0 0 60px;
+  display: block;
+}
+
+.work-experience p {
+  margin: 0;
+  font: 38px/54px "LatoSemibold";
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  font: 30px/70px "MontserratMedium";
+}
+
+.skills li {
+  position: relative;
+}
+
+.skills li::after {
+  content: "";
+  width: 200px;
+  position: absolute;
+  background-color: var(--black);
+  height: 9px;
+  left: 0;
+  bottom: -25px;
+  border-radius: 5px;
+}
+
+.skills .figma::after {
+  width: 50px;
+}
+
+.skills .webpack::after {
+  width: 130px;
+}
+
+.skills .type-script::after,
+.skills .react::after,
+.skills .npm::after {
+  width: 160px;
+}
+
+.skills .figma::before,
+.skills .webpack::before,
+.skills .type-script::before,
+.skills .react::before,
+.skills .npm::before {
+  content: "";
+  width: 200px;
+  position: absolute;
+  background-color: var(--grey);
+  height: 9px;
+  left: 0;
+  bottom: -25px;
+  border-radius: 5px;
 }
 
 #aside {
   background-color: var(--dark-blue);
+  width: 30%;
+}
+
+#aside img {
+  width: 100%;
 }

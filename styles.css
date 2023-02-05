@@ -1,0 +1,22 @@
+:root {
+  --white: #fff;
+  --dark-blue: #1f1f26
+}
+
+.content {
+  display: flex;
+}
+
+#main {
+  padding: 302px 0 0;
+  background-color: var(--white);
+}
+
+.heading {
+  background-color: #fdcb00;
+  padding: 166px 155px;
+}
+
+#aside {
+  background-color: var(--dark-blue);
+}

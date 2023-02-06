@@ -33,7 +33,9 @@
   --dark-blue: #1f1f26;
   --dark-grey: #2d2d2d;
   --black: #000;
-  --grey: #ccc
+  --grey: #ccc;
+  --orange: #fdcb00;
+  --space-grey: #29292f;
 }
 
 body {
@@ -60,19 +62,19 @@ h3 {
 #main {
   padding: 130px 0 0;
   background-color: var(--white);
-  width: 70%;
+  width: 64%;
 }
 
 #main .content h2 {
   font: 50px/50px "MontserratSemiBold";
-  border-bottom: 5px solid;
+  border-bottom: 5px solid var(--dark-grey);
   padding: 0 0 54px;
   margin: 0 0 50px;
 }
 
 .heading {
-  background-color: #fdcb00;
-  padding: 120px 100px;
+  background-color: var(--orange);
+  padding: 120px 58px;
 }
 
 .heading h1,
@@ -80,7 +82,7 @@ h3 {
   line-height: 100px;
   font-size: 100px;
   font-family: "MontserratBold";
-  color: var(--black);
+  color: var(--dark-grey);
 }
 
 .heading mark {
@@ -95,7 +97,7 @@ h3 {
   font-family: "MontserratMedium";
 }
 
-.content {
+#main .content {
   padding: 130px 155px;
 }
 
@@ -116,7 +118,7 @@ h3 {
 
 .work-experience .date {
   width: 100%;
-  font: 38px/58px "MontserratBold";
+  font: 38px/58px "LatoBold";
 }
 
 .work-experience h3,
@@ -187,9 +189,72 @@ h3 {
 
 #aside {
   background-color: var(--dark-blue);
-  width: 30%;
+  width: 36%;
+  color: var(--white);
 }
 
 #aside img {
   width: 100%;
+  margin: 0 0 140px;
+}
+
+#aside .content {
+  padding: 0 0 0 90px;
+}
+
+#aside h1 {
+  border-bottom: 5px solid var(--orange);
+  padding: 0 0 54px;
+  font: 50px/50px "MontserratSemiBold";
+  margin: 0 0 80px;
+}
+
+#aside li {
+  padding: 0 0 0 30px;
+  margin: 0 0 95px;
+  word-break: break-all;
+}
+
+#aside h2 {
+  font: 42px/42px "MontserratSemiBold";
+}
+
+#aside span,
+#aside a {
+  font: 27px/58px "MontserratMedium";
+  display: block;
+}
+
+#aside a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+#aside a:hover {
+  text-decoration: underline;
+}
+
+.reference {
+  margin: 0 0 180px;
+}
+
+.contacts h2 {
+  background-color: var(--space-grey);
+  padding: 10px 55px 10px 55px;
+  position: relative;
+}
+
+.contacts h2::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 62px;
+  background-color: var(--orange);
+  left: -119px;
+  top: 0;
+}
+
+.contacts a,
+.contacts span {
+  padding: 0 0 0 55px;
 }

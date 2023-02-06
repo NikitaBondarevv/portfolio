@@ -311,6 +311,7 @@ p {
 
   .work-experience li {
     margin: 0 0 7vw;
+    column-gap: 7.5vw;
   }
 
   .work-experience p {
@@ -345,5 +346,11 @@ p {
   .skills .figma::before, .skills .webpack::before, .skills .type-script::before, .skills .react::before, .skills .npm::before {
     width: 15vw;
     height: 0.7vw;
+  }
+}
+
+@media (max-width: 885px) {
+  .skills {
+    grid-template-columns: none;
   }
 }

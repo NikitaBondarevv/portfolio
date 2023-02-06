@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "MontserratBold";
+  src: url(fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "MontserratMedium";
+  src: url(fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "MontserratExtraLight";
+  src: url(fonts/Montserrat-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "MontserratSemiBold";
+  src: url(fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "LatoBold";
+  src: url(fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: "LatoSemibold";
+  src: url(fonts/Lato-Semibold.ttf);
+}
+
+:root {
+  --white: #fff;
+  --dark-blue: #1f1f26;
+  --dark-grey: #2d2d2d;
+  --black: #000;
+  --grey: #ccc;
+  --orange: #fdcb00;
+  --space-grey: #29292f;
+}
+
+body {
+  color: var( --dark-grey);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#main {
+  padding: 130px 0 0;
+  background-color: var(--white);
+  width: 64%;
+}
+
+#main .content h2 {
+  font: 50px/50px "MontserratSemiBold";
+  border-bottom: 5px solid var(--dark-grey);
+  padding: 0 0 54px;
+  margin: 0 0 50px;
+}
+
+.heading {
+  background-color: var(--orange);
+  padding: 120px 58px;
+}
+
+.heading h1,
+.heading mark {
+  line-height: 100px;
+  font-size: 100px;
+  font-family: "MontserratBold";
+  color: var(--dark-grey);
+}
+
+.heading mark {
+  font-family: "MontserratExtraLight";
+  background: none;
+  color: var( --dark-grey);
+}
+
+.heading span {
+  font-size: 50px;
+  line-height: 50px;
+  font-family: "MontserratMedium";
+}
+
+#main .content {
+  padding: 130px 155px;
+}
+
+.about-me {
+  font: 38px/58px "MontserratMedium";
+  padding: 0 0 140px;
+}
+
+.work-experience {
+  padding: 0 0 180px;
+}
+
+.work-experience li {
+  display: flex;
+  column-gap: 80px;
+  margin: 0 0 100px;
+}
+
+.work-experience .date {
+  width: 100%;
+  font: 38px/58px "LatoBold";
+}
+
+.work-experience h3,
+.company-name {
+  font: 38px/58px "LatoBold";
+}
+
+.company-name {
+  margin: 0 0 60px;
+  display: block;
+}
+
+.work-experience p {
+  margin: 0;
+  font: 38px/54px "LatoSemibold";
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  font: 30px/70px "MontserratMedium";
+}
+
+.skills li {
+  position: relative;
+}
+
+.skills li::after {
+  content: "";
+  width: 200px;
+  position: absolute;
+  background-color: var(--black);
+  height: 9px;
+  left: 0;
+  bottom: -25px;
+  border-radius: 5px;
+}
+
+.skills .figma::after {
+  width: 50px;
+}
+
+.skills .webpack::after {
+  width: 130px;
+}
+
+.skills .type-script::after,
+.skills .react::after,
+.skills .npm::after {
+  width: 160px;
+}
+
+.skills .figma::before,
+.skills .webpack::before,
+.skills .type-script::before,
+.skills .react::before,
+.skills .npm::before {
+  content: "";
+  width: 200px;
+  position: absolute;
+  background-color: var(--grey);
+  height: 9px;
+  left: 0;
+  bottom: -25px;
+  border-radius: 5px;
+}
+
+#aside {
+  background-color: var(--dark-blue);
+  width: 36%;
+  color: var(--white);
+}
+
+#aside img {
+  width: 100%;
+  margin: 0 0 140px;
+}
+
+#aside .content {
+  padding: 0 0 0 90px;
+}
+
+#aside h1 {
+  border-bottom: 5px solid var(--orange);
+  padding: 0 0 54px;
+  font: 50px/50px "MontserratSemiBold";
+  margin: 0 0 80px;
+}
+
+#aside li {
+  padding: 0 0 0 30px;
+  margin: 0 0 95px;
+  word-break: break-all;
+}
+
+#aside h2 {
+  font: 42px/42px "MontserratSemiBold";
+}
+
+#aside span,
+#aside a {
+  font: 27px/58px "MontserratMedium";
+  display: block;
+}
+
+#aside a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+#aside a:hover {
+  text-decoration: underline;
+}
+
+.reference {
+  margin: 0 0 180px;
+}
+
+.contacts h2 {
+  background-color: var(--space-grey);
+  padding: 10px 55px 10px 55px;
+  position: relative;
+}
+
+.contacts h2::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 62px;
+  background-color: var(--orange);
+  left: -119px;
+  top: 0;
+}
+
+.contacts a,
+.contacts span {
+  padding: 0 0 0 55px;
+}

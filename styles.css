@@ -261,7 +261,7 @@ p {
   padding: 0 0 0 55px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1700px) {
   .heading {
     padding: 7vw 3.6vw;
   }
@@ -321,7 +321,7 @@ p {
 
   .skills {
     font-size: 2.5vw;
-    line-height: 6.5vw;
+    line-height: 2.5vw;
   }
 
   .skills li::after {
@@ -346,6 +346,51 @@ p {
   .skills .figma::before, .skills .webpack::before, .skills .type-script::before, .skills .react::before, .skills .npm::before {
     width: 15vw;
     height: 0.7vw;
+  }
+
+  #aside img {
+    margin: 0 0 9vw;
+  }
+
+  #aside .content {
+    padding: 0 0 0 8vw;
+  }
+
+  #aside h1 {
+    border-bottom: 0.5vw solid var(--orange);
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+    padding: 0 0 3.7vw;
+    margin: 0 0 7.5vw;
+  }
+
+  #aside li {
+    padding: 0 0 0 2vw;
+    margin: 0 0 8.5vw;
+  }
+
+  #aside h2 {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
+  #aside span,
+  #aside a {
+    font-size: 2.3vw;
+    line-height: 2.5vw;
+    padding: 0 0 0 2vw;
+  }
+
+  .reference {
+    margin: 0 0 12vw;
+  }
+
+  .contacts h2 {
+    padding: 1vw 2.5vw;
+  }
+
+  .contacts h2::before {
+    height: 6vw;
   }
 }
 

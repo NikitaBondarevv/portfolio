@@ -39,7 +39,7 @@
 }
 
 body {
-  color: var(--dark-grey);
+  color: var( --dark-grey);
 }
 
 ul {
@@ -50,8 +50,7 @@ ul {
 
 h1,
 h2,
-h3,
-p {
+h3 {
   margin: 0;
 }
 
@@ -89,7 +88,7 @@ p {
 .heading mark {
   font-family: "MontserratExtraLight";
   background: none;
-  color: var(--dark-grey);
+  color: var( --dark-grey);
 }
 
 .heading span {
@@ -139,8 +138,7 @@ p {
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
-  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 50px;
   font: 30px/70px "MontserratMedium";
 }
@@ -242,7 +240,7 @@ p {
 
 .contacts h2 {
   background-color: var(--space-grey);
-  padding: 10px 55px;
+  padding: 10px 55px 10px 55px;
   position: relative;
 }
 
@@ -259,147 +257,4 @@ p {
 .contacts a,
 .contacts span {
   padding: 0 0 0 55px;
-}
-
-@media (max-width: 1700px) {
-  .heading {
-    padding: 7vw 3.6vw;
-  }
-
-  .heading h1,
-  .heading mark {
-    font-size: 5.5vw;
-    line-height: 5.5vw;
-  }
-
-  #main {
-    padding: 8.5vw 0 0;
-  }
-
-  #main .content {
-    padding: 8vw 6vw;
-  }
-
-  .heading span,
-  #main .content h2 {
-    font-size: 3.5vw;
-    line-height: 3.5vw;
-    padding: 0 0 3.7vw;
-    margin: 0 0 3.6vw;
-  }
-
-  #main .content h2 {
-    border-bottom: 0.5vw solid var(--dark-grey);
-  }
-  
-  .about-me {
-    font-size: 2.5vw;
-    line-height: 4vw;
-    padding: 0 0 9vw;
-  }
-
-  .work-experience {
-    padding: 0 0 11vw;
-  }
-
-  .work-experience h3,
-  .company-name,
-  .work-experience .date {
-    font-size: 2.5vw;
-    line-height: 4vw;
-  }
-
-  .work-experience li {
-    margin: 0 0 7vw;
-    column-gap: 7.5vw;
-  }
-
-  .work-experience p {
-    font-size: 2.5vw;
-    line-height: 3.8vw;
-  }
-
-  .skills {
-    font-size: 2.5vw;
-    line-height: 2.5vw;
-  }
-
-  .skills li::after {
-    width: 14vw;
-    height: 0.7vw;
-  }
-
-  .skills .figma::after {
-    width: 5vw;
-  }
-
-  .skills .webpack::after {
-    width: 9.5vw;
-  }
-
-  .skills .type-script::after,
-  .skills .react::after,
-  .skills .npm::after {
-    width: 10.5vw;
-  }
-
-  .skills .figma::before,
-  .skills .webpack::before,
-  .skills .type-script::before,
-  .skills .react::before,
-  .skills .npm::before {
-    width: 14vw;
-    height: 0.7vw;
-  }
-
-  #aside img {
-    margin: 0 0 9vw;
-  }
-
-  #aside .content {
-    padding: 0 0 0 8vw;
-  }
-
-  #aside h1 {
-    border-bottom: 0.5vw solid var(--orange);
-    font-size: 3.5vw;
-    line-height: 3.5vw;
-    padding: 0 0 3.7vw;
-    margin: 0 0 7.5vw;
-  }
-
-  #aside li {
-    padding: 0 0 0 2vw;
-    margin: 0 0 8.5vw;
-  }
-
-  #aside h2 {
-    font-size: 3vw;
-    line-height: 4vw;
-  }
-
-  #aside span,
-  #aside a {
-    font-size: 2.3vw;
-    line-height: 2.5vw;
-    padding: 0 2vw;
-  }
-
-  .reference {
-    margin: 0 0 12vw;
-  }
-
-  .contacts h2 {
-    padding: 1vw 2.5vw;
-  }
-
-  .contacts h2::before {
-    height: 6vw;
-  }
-}
-
-@media (max-width: 885px) {
-  .skills {
-    grid-template-columns: none;
-  }
 }
